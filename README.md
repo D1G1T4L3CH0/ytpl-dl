@@ -15,3 +15,6 @@ SUBDIRECTORY="trending"
 yt-dlp $1 --ignore-errors --prefer-ffmpeg --write-description --download-archive archive.file --output "${DOWNLOAD_DIR}/${SUBDIRECTORY}/%(uploader)s/%(title)s-%(id)s.%(ext)s" --add-metadata --write-auto-sub --embed-subs $URL
 ```
 Just change the variables on each to whatever you want. You may also want to modify the comment of each one.
+
+## Running
+You can run it manually whenever you would like, you can run it at logon by setting is as a logon script in your distro, or oyu could run it as a cron job with crontab. I personally use crontab since I like to have a 'save' playlist that i add youtube videos to when I want to save them, that way it gets automatically downloaded the next time the script is run according to my schedule.
